@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './+home';
 import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
+import { HomeComponent } from './+home';
 import { TeamComponent } from './+team';
 import { DetailComponent } from './+detail';
 import { TeamService } from './shared';
@@ -22,5 +22,5 @@ import { TeamService } from './shared';
 ])
 
 export class WorkshopAppComponent {
-  title = 'workshop works!';
+  title = 'Angular 2 Workshop';
 }

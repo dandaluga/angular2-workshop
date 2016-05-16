@@ -12,7 +12,7 @@ import { TeamService } from '../shared';
 export class DetailComponent implements OnInit, OnActivate {
 
   person;
-  
+
   routerOnActivate(curr:RouteSegment):void {
       const id = curr.getParam('id');
 

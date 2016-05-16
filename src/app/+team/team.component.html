@@ -1,6 +1,7 @@
-<app-card *ngFor="let person of team.people">
-  <input type="text" [(ngModel)]="person.name">
-  <a [routerLink]="['/detail', person.id]">Details</a>
-  <!--<button (click)="person.name.focus()">Focus</button>-->
-</app-card>
+<div>
+  <app-card [person]="person"
+            *ngFor="let person of team.people"
+            (edit)="onEdit($event)">
+  </app-card>
+</div>
 
