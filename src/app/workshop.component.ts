@@ -13,12 +13,14 @@ import { TeamService } from './shared';
   directives: [ROUTER_DIRECTIVES],
   providers: [ROUTER_PROVIDERS, TeamService]
 })
+
 @Routes([
   {path: '/', component: HomeComponent},
   {path: '/home', component: HomeComponent},
   {path: '/team', component: TeamComponent},
   {path: '/detail/:id', component: DetailComponent}
 ])
+
 export class WorkshopAppComponent {
   title = 'workshop works!';
 }
